@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.navbar .nav-links li:hover {
+    background-color: #333333;
+}
+
+.navbar .nav-links li .profile-pic {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+.content-box {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 1.5rem; 
+    margin-bottom: 1.5rem; 
+    position: relative; 
+}
+
+.button-container {
+    margin-top: 1rem;
+}
+
+
+a.rounded-button, a.rounded-button-discord {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.rounded-button {
+    background-color: #272727; 
+}
+
+a.rounded-button-discord {
+    background-color: #5865F2; 
+}
+
+a.rounded-button:hover {
+    background-color: #141414; 
+    transform: scale(1.05); 
+}
+
+a.rounded-button-discord:hover {
+    background-color: #4b56d1;
+    transform: scale(1.05);
+}
+
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature-image {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.5rem; 
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+.feature p {
+    font-size: 1rem;
+}
